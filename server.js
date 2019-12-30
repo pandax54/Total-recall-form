@@ -25,6 +25,18 @@ server.get("/subscribe", function(req,res) {
     return res.render("form/subscribe")
 })
 
+server.get("/update", function(req,res) {
+    return res.render("form/update")
+})
+
+server.get("/edit", function(req,res) {
+    return res.render("form/user-form")
+})
+
+server.get("/complete", function(req,res) {
+    return res.render("form/form-complete")
+})
+
 
 server.listen(5000, function(){
     console.log("server is running")
