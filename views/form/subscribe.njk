@@ -1,0 +1,72 @@
+{% extends "layout.njk" %}
+
+{% block content %}
+
+<section class="bg-subscribe">
+
+<form action="" method="POST">
+
+<div class="img-card">
+<img src="subscribe.png" alt="">
+</div>
+
+<div class="info-card">
+
+<h1>total recall form</h1>
+
+<div class="info-card-infos">
+
+<div><label for="name">Name:</label><input type="text" name="name" id="name"></div>
+
+<div class="info-card-label">
+<label class="label">Gender</label> 
+<span><input type="radio" name="gender" value="Man" id="">Man</span>
+<span><input type="radio" name="gender" value="Woman" id="">Woman</span>
+</div>
+
+<div class="info-card-label">
+<label>Destination</label> 
+<span><input type="radio" name="destination" value="moon" id="">Moon</span>
+<span><input type="radio" name="destination" value="mars" id="">Mars</span>
+<span><input type="radio" name="destination" value="saturn" id="">Saturn</span>
+</div>
+
+
+<div class="info-card-label">
+<label for="name">Sexual Orientation:</label><input type="text" name="sexual-orientation" id="sexual-orientation">
+</div>
+
+<div class="info-card-label">
+<label>Would you like some aliens stuff?</label> 
+<span><input type="radio" name="alien-stuff" value="Yes" id="">Yes</span>
+<span><input type="radio" name="alien-stuff" value="No" id="">No</span>
+</div>
+
+<div class="info-card-label">
+<label>Role-playing</label> 
+<div class="roleplay-container">
+<span class="roleplay-options"><input type="radio" name="role-playing" value="millionaire-playboy" id="">Millionaire playboy</span>
+<span class="roleplay-options"><input type="radio" name="role-playing" value="sport-hero" id="">Sports Hero</span>
+<span class="roleplay-options"><input type="radio" name="role-playing" value="industrial-tycoon" id="">Industrial tycoon</span>
+<span class="roleplay-options"><input type="radio" name="role-playing" value="secret-agent" id="">Secret Agent</span>
+</div>
+
+
+<div class="btn-form">
+<button class="cancel-btn">Cancel</button>
+<button class="confirm-btn">Confirm</button>
+</div>
+
+</div>
+
+</div>
+
+
+</form>
+
+
+
+
+</section>
+
+{% endblock  %}

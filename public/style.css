@@ -1,0 +1,271 @@
+
+
+
+*, html {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+
+ /* INDEX  */
+ .index {
+    /* The image used */
+    background-image: url("/index.jpg");
+
+    /* Full height */
+    /* height: 100vh;  */
+
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+ 
+div.title {
+    width: 800px;
+    margin: 0 auto;
+    margin-top: 70px;
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 30px;
+    line-height: 40px;
+    text-align: center;
+    color: white;
+}
+
+ /* CARD DARK GREEN  */
+
+ .card-subscribe {
+    margin: 70px auto;
+    width: 550px;
+    height: 350px;
+    padding: 10px;
+    
+    background: rgba(16, 37, 36, 0.75);
+    box-shadow: 7.97714px 11.9657px 10px rgba(0, 0, 0, 0.3);
+    border-radius: 5.98286px;
+ }
+
+.card-subscribe h1 {
+    width: 350px;
+    height: 182.98px;
+    
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 35px;
+    line-height: 52px;
+    display: block;
+    margin: 30px auto 30px;
+    text-align: center;
+    
+    color: #E74C3B;
+ }
+
+a.btn {
+    display: block;
+    width: 200px;
+    height: 50px;
+    text-decoration: none;
+    background: #FFFFFF;
+    border-radius: 3px;
+    letter-spacing: 1px;
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 25px;
+    line-height: 46px;
+    margin: 0 auto;
+    text-align: center;
+    color: #2E3E3D;
+ }
+
+
+ /* FORM SUBSCRIBE  */
+
+ .bg-subscribe {
+    background: linear-gradient(0deg, rgba(255, 255, 255, 0.92), rgba(255, 255, 255, 0.92)), url("/02\ Shuttle\ landing\ on\ Mars\ Total\ Recall\ 1990\ movie\ image.jpg");
+    background-blend-mode: soft-light, normal;
+    /* filter: blur(30px); */
+    /* Center and scale the image nicely */
+    background-position: left;
+    background-repeat: repeat;
+    background-size: cover;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+ }
+
+ form {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    grid-template-rows: 1fr;
+    margin: 50px auto;
+    width: 798px;
+    min-height: 570px;
+    background-color:  #F4F0E6;
+    box-shadow: -5.7px 6.84px 9.12px rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(50px);
+    /* Note: backdrop-filter has minimal browser support */
+ }
+
+.info-card h1 {
+    width: 308.94px;
+    height: 52.44px;
+    left: 633.1px;
+    top: 133.24px;
+    
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45.6px;
+    line-height: 52px;
+    /* identical to box height */
+    
+    display: flex;
+    align-items: center;
+    
+    color: #E74C3B;
+ }
+
+ .img-card img {
+    height: 100%;
+ }
+
+ .info-card {
+    padding-left: 20px;
+}
+
+.info-card h1 {
+    width: 308.94px;
+    height: 52.44px;
+    left: 633.1px;
+    top: 133.24px;
+    
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 45.6px;
+    line-height: 52px;
+    /* identical to box height */
+    
+    display: block;
+    margin: 30px auto;
+    align-items: center;
+    
+    color: #E74C3B;
+ }
+
+ .info-card-infos {
+     display: flex;
+     flex-direction: column;
+     margin-left: 40px;
+ }
+
+ .info-card-infos > div {
+    margin-bottom: 20px; 
+
+
+
+ }
+
+ label {
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 27px;
+    margin-right: 10px;
+    color: #809694;
+ }
+
+ input[type="radio"] {
+     margin-left: 10px;
+     margin-right: 5px;
+ }
+
+ input[type="text"] {
+    width: 200px;
+    height: 30.78px;
+    
+    background: #FFFFFF;
+    /* border-radius: 3px; */
+ }
+
+ input#name {
+     width: 280px;
+ }
+
+ span {
+    font-family: Rhodium Libre;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.24px;
+    line-height: 31px;
+    align-items: center;
+    
+    color: #102524;
+ }
+
+.roleplay-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+}
+
+.roleplay-options input[type="radio"] {
+    /* font-size: 18px; */
+    margin-left: 0;
+}
+
+
+
+.btn-form {
+    display: flex;
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18.24px;
+    line-height: 21px;
+
+    color: #FFFFFF;
+    margin-top: 30px;
+}
+
+.cancel-btn {
+    width: 130px;
+    height: 50px;
+
+    background: #809694;
+    box-shadow: 0px 4.56px 6.84px rgba(0, 0, 0, 0.2);
+    border-radius: 3.42px;
+
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 21px;
+    margin-left: 25px;
+    color: #FFFFFF;
+}
+
+.confirm-btn {
+    width: 130px;
+    height: 50px;
+    background: #1AAB9D;
+    box-shadow: 0px 4.56px 6.84px rgba(0, 0, 0, 0.2);
+    border-radius: 3.42px;
+
+    font-family: Ferghaus Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 22px;
+    line-height: 21px;
+    margin-left: 50px;
+    color: #FFFFFF;
+}
