@@ -30,6 +30,10 @@ routes.get("/complete", function(req,res) {
     return res.render("form/form-complete")
 })
 
+routes.get("/notfound", function(req,res) {
+    return res.render("form/notFound")
+})
+
 // POST REQUEST - when you submit your form
 routes.post('/subscribe', function(req, res) {
 
