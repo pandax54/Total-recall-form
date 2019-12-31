@@ -38,9 +38,14 @@ routes.get('/:id', function(req, res) {
       // return true or false
     })
     if (!foundUser) return res.send("Not Found")
+
+    const userInfo = {
+        ... foundUser,
+        created_at: new Intl.DateTimeFormat("pt-BR").format(foundUser.created_at)
+      }
     
     //return res.send("Found!!") // test
-    return res.render("form/foundUser", { foundUser })
+    return res.render("form/foundUser", { userInfo })
   })
 
 
