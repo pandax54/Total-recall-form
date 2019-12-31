@@ -1,43 +1,26 @@
 const express = require('express')
 const nunjucks = require('nunjucks')
 
+const routes = require('./routes') 
+
 const server = express()
 
-server.set('view engine', 'njk')
+server.use(express.urlencoded({extended: true}))
 
 server.use(express.static('public'))
 
 server.use(express.static('image'))
+server.use(routes) 
+
+server.set('view engine', 'njk')
 
 nunjucks.configure("views", {
     express: server,
     autoescape: false,
     noCache: true
-    //nao guarda uma versao, evitar erros nas atualizacoes 
-    
   })
 
-server.get("/", function(req, res) {
-    return res.render("index")
-})
 
-server.get("/subscribe", function(req,res) {
-    return res.render("form/subscribe")
-})
-
-server.get("/update", function(req,res) {
-    return res.render("form/update")
-})
-
-server.get("/edit", function(req,res) {
-    return res.render("form/user-form")
-})
-
-server.get("/complete", function(req,res) {
-    return res.render("form/form-complete")
-})
-
-
-server.listen(5000, function(){
+server.listen(8000, function(){
     console.log("server is running")
 })
