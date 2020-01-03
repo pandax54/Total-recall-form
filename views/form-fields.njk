@@ -1,0 +1,88 @@
+
+
+
+<div class="info-card-infos">
+
+<div><label for="name">Name:</label><input value="{{foundUser.name}}" type="text" name="name" id="name"></div>
+
+<div class="info-card-label">
+<label class="label">Gender</label> 
+<span><input type="radio" name="gender" value="Man" id=""
+{% if foundUser.gender == "Man" %}
+checked
+{% endif %}
+>Man</span>
+<span><input type="radio" name="gender" value="Woman" id=""
+{% if foundUser.gender == "Woman" %}
+checked
+{% endif %}
+>Woman</span>
+</div>
+
+<div class="info-card-label">
+<label>Destination</label> 
+<span><input type="radio" name="destination" value="Moon" id=""
+{% if foundUser.destination == "Moon" %}
+checked
+{% endif %}
+>Moon</span>
+<span><input type="radio" name="destination" value="Mars" id=""
+{% if foundUser.destination == "Mars" %}
+checked
+{% endif %}
+>Mars</span>
+<span><input type="radio" name="destination" value="Saturn" id=""
+{% if foundUser.destination == "Saturn" %}
+checked
+{% endif %}
+>Saturn</span>
+</div>
+
+
+<div class="info-card-label">
+<label for="name">Sexual Orientation:</label><input value="{{foundUser.sexualOrientation}}" type="text" name="sexualOrientation" id="sexualOrientation">
+</div>
+
+<div class="info-card-label">
+<label>Would you like some aliens stuff?</label> 
+<span><input type="radio" name="alienStuff" value="Yes" id="" 
+{% if foundUser.alienStuff == "Yes" %}
+checked
+{% endif %}
+>Yes</span>
+<span><input type="radio" name="alienStuff" value="No" id=""
+{% if foundUser.alienStuff == "No" %}
+checked
+{% endif %}
+>No</span>
+</div>
+
+<div class="info-card-label">
+<label>Role-playing</label> 
+<div class="roleplay-container">
+<span class="roleplay-options"><input type="radio" name="rolePlaying" value="millionaire-playboy" id=""
+{% if foundUser.rolePlaying == "millionaire-playboy" %}
+checked
+{% endif %}
+>Millionaire playboy</span>
+<span class="roleplay-options"><input type="radio" name="rolePlaying" value="sport-hero" id=""
+{% if foundUser.rolePlaying == "sport-hero" %}
+checked
+{% endif %}
+>Sports Hero</span>
+<span class="roleplay-options"><input type="radio" name="rolePlaying" value="industrial-tycoon" id=""
+{% if foundUser.rolePlaying == "industrial-tycoon" %}
+checked
+{% endif %}
+>Industrial tycoon</span>
+<span class="roleplay-options"><input type="radio" name="rolePlaying" value="secret-agent" id=""
+{% if foundUser.rolePlaying == "secret-agent" %}
+checked
+{% endif %}
+>Secret Agent</span>
+</div>
+
+
+
+
+

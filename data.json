@@ -7,7 +7,16 @@
       "gender": "Woman",
       "sexualOrientation": "bissexual",
       "alienStuff": "Yes",
-      "destination": "mars",
+      "destination": "Mars",
+      "rolePlaying": "sport-hero"
+    },
+    {
+      "id": 2,
+      "created_at": 1578058664658,
+      "name": "Fernanda Penna Ribeiro",
+      "alienStuff": "Yes",
+      "destination": "Mars",
+      "sexualOrientation": "bissexual",
       "rolePlaying": "sport-hero"
     }
   ]

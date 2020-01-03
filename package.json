@@ -1,7 +1,7 @@
 {
   "name": "total-recall",
   "version": "1.0.0",
-  "description": "first commit",
+  "description": "",
   "main": "server.js",
   "scripts": {
     "start": "npm-run-all -p nodemon browsersync",

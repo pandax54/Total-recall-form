@@ -10,13 +10,9 @@
 
  /* INDEX  */
  .index {
+
     /* The image used */
     background-image: url("/index.jpg");
-
-    /* Full height */
-    /* height: 100vh;  */
-
-    /* Center and scale the image nicely */
     background-position: left;
     background-repeat: repeat;
     background-size: cover;
@@ -106,7 +102,9 @@ a.btn {
     grid-template-columns: 40% 60%;
     grid-template-rows: 1fr;
     margin: 50px auto;
-    width: 798px;
+    width: 70%;
+    /* margin: 50px auto; */
+    /* width: 798px; */
     min-height: 570px;
     background-color:  #F4F0E6;
     box-shadow: -5.7px 6.84px 9.12px rgba(0, 0, 0, 0.3);
@@ -134,6 +132,8 @@ a.btn {
  }
 
  .img-card img {
+    
+    max-width: 100%;
     height: 100%;
  }
 
@@ -142,22 +142,32 @@ a.btn {
 }
 
 .info-card h1 {
+    /* width: 308.94px; */
+    /* height: 52.44px; */
+    /* left: 633.1px; */
+    /* top: 133.24px; */
+    /* font-family: Ferghaus Sans; */
+    /* font-style: normal; */
+    /* font-weight: normal; */
+    /* font-size: 45.6px; */
+    /* line-height: 52px; */
+    /* display: block; */
+    /* margin: 30px auto; */
+    /* align-items: center; */
+    /* color: #E74C3B; */
+
+    margin-left: 0;
+    padding-left: 40px;
+    text-align: left;
     width: 308.94px;
     height: 52.44px;
-    left: 633.1px;
-    top: 133.24px;
-    
+    margin-top: 30px;
     font-family: Ferghaus Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 45.6px;
-    line-height: 52px;
-    /* identical to box height */
-    
-    display: block;
-    margin: 30px auto;
-    align-items: center;
-    
+    font-size: 50px;
+    line-height: 37px;
+    margin-bottom: 35px;
     color: #E74C3B;
  }
 
@@ -240,8 +250,8 @@ a.btn {
 .cancel-btn {
     width: 130px;
     height: 50px;
-
-    background: #809694;
+    background: #c6c2b9;
+    /* background: #809694; */
     box-shadow: 0px 4.56px 6.84px rgba(0, 0, 0, 0.2);
     border-radius: 3.42px;
 
@@ -327,7 +337,8 @@ a.btn {
  }
 
  .bg-userForm img {
-    width: 339px;
+    width: 100%;
+    /* width: 339px; */
     height: 100%;
  }
 
@@ -345,11 +356,14 @@ a.btn {
     font-family: Ferghaus Sans;
     font-style: normal;
     font-weight: normal;
-    font-size: 16px;
+    font-size: 18px;
     line-height: 18px;
     text-align: center;
 
     color: #FFFFFF;
+    text-align: center;
+    padding: 14px;
+    text-decoration: none;
  }
 
  .field-title h1 {

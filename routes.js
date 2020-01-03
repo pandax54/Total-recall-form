@@ -48,6 +48,20 @@ routes.get('/:id', function(req, res) {
     return res.render("form/foundUser", { userInfo })
   })
 
+  routes.get("/:id/edit", function(req, res) {
+
+    //get the id object
+    const {id} = req.params 
+    
+    const foundUser = data.recall.find(user => {
+      return id == user.id
+      // return true or false
+    })
+    if (!foundUser) return res.send("Not Found")
+
+      return res.render("form/edit", { foundUser })
+  })
+
 
 
 routes.get("/notfound", function(req,res) {
