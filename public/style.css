@@ -400,8 +400,8 @@ a.btn {
  }
 
  div.user {
-
-    width: 168px;
+   width: 200px;
+    /* width: 168px; */
     height: 24px;  
     font-family: Futura Cond;
     font-style: normal;

@@ -4,7 +4,7 @@
 
 <section class="bg-subscribe">
 
-<form action="/subscribe" method="POST">
+<form action="/subscribe?_method=PUT" method="POST">
 
 <div class="img-card">
 <img src="/subscribe.png" alt="">
@@ -16,10 +16,9 @@
 
 {% include 'form-fields.njk' %}
 
-
+<input type="hidden" name="id" value="{{ foundUser.id}}">
 
 </div>
-
 
 </form>
 

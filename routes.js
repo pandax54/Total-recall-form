@@ -109,5 +109,29 @@ routes.post('/subscribe', function(req, res) {
 
   })
 
+  routes.put('/subscribe', function(req, res) {
+	const {id} = req.body
+  const foundUser = data.recall.find(user => {
+      return id == user.id
+      // return true or false
+    })
+    if (!foundUser) return res.send("Not Found")
+	
+  	const userInfo = {
+    	... foundUser,
+      ...req.body //the new info must come after to rewritten the info
+  	}
+    
+    // to find the position in the array rememeber to substract 1, we need this so the new info will overwritten the old one and not create another user
+    data.recall[id-1] = userInfo
+  // use the function to write into the file
+    fs.writeFile("data.json", JSON.stringify(data, null, 2), function(err) {
+    if (err) return res.send("Write error!!!")
+    // now redirect to the form complete
+    return res.redirect(`/${id}`)
+  })
+  
+})
+
 
 module.exports = routes 
